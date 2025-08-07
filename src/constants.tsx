@@ -12,6 +12,7 @@ export const networks: Record<string, string> = {
   testnet: "https://api.testnet.staging.aptoslabs.com/v1",
   devnet: devnetUrl,
   decibel: "https://api.netna.staging.aptoslabs.com/v1",
+  neony: "https://network.neony.exchange:18080/v1",
   local: "http://127.0.0.1:8080/v1",
 };
 
@@ -39,6 +40,7 @@ const apiKeys: ApiKeys = {
   testnet: "AG-6ZFXBNIVINVKOKLNAHNTFPDHY8WMBBD3X",
   devnet: "AG-GA6I9F6H8NM1ACW8ZVJGMPUTJUKZ5KN6A",
   decibel: undefined,
+  neony: undefined,
   local: undefined,
 };
 
@@ -55,6 +57,7 @@ export enum Network {
   TESTNET = "testnet",
   DEVNET = "devnet",
   DECIBEL = "decibel",
+  NEONY = "neony",
 }
 
 // Remove trailing slashes

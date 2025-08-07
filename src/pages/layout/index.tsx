@@ -33,10 +33,13 @@ function ExplorerWalletAdapterProvider({children}: LayoutProps) {
     <AptosWalletAdapterProvider
       key={networkName}
       plugins={[okxWalletAdapter, msafeWalletAdapter]}
-      autoConnect={true}
+      autoConnect={false}
+      onError={() => {
+        console.log("error");
+      }}
       dappConfig={{
         aptosConnectDappId: AptosConnectId,
-        network: networkName as Network,
+        network: Network.MAINNET,
       }}
     >
       {children}
