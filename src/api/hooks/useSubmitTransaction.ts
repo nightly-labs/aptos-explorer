@@ -53,7 +53,6 @@ const useSubmitTransaction = () => {
     }
 
     setTransactionInProcess(true);
-
     const signAndSubmitTransactionCall = async (
       transaction: InputTransactionData,
     ): Promise<TransactionResponse> => {
@@ -64,8 +63,18 @@ const useSubmitTransaction = () => {
 
       let response;
       try {
-        response = await signAndSubmitTransaction(transaction);
-
+        response = await signAndSubmitTransaction({
+          ...transaction,
+          options: {
+            maxGasAmount: 100000000,
+            gasUnitPrice: 100,
+            // random number u64
+            replayProtectionNonce: Math.floor(Math.random() * 2 ** 64),
+            expireTimestamp: new Date(
+              Date.now() + 1000 * 60 * 60 * 24,
+            ).getTime(),
+          },
+        });
         // transaction submit succeed
         if ("hash" in response) {
           await state.aptos_client.waitForTransaction(response["hash"], {
