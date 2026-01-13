@@ -27,7 +27,7 @@ export function CoinToFAMigrationBanner() {
       wallet_address: addressFromWallet(account?.address),
       wallet_name: wallet?.name ?? "",
     });
-    window.location.href = `https://explorer.aptoslabs.com/account/${addressFromWallet(account?.address)}/coins`;
+    window.location.href = `/account/${addressFromWallet(account?.address)}/coins`;
   };
 
   const learnMoreButton = (

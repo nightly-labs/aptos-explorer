@@ -1,9 +1,6 @@
-import {useEffect, useState} from "react";
-import {defaultNetworkName} from "../../constants";
-import {useGlobalState} from "../../global-config/GlobalConfig";
+import {useState} from "react";
 
-export const ANALYTICS_DATA_URL =
-  "https://storage.googleapis.com/aptos-mainnet/explorer/chain_stats_v2.json?cache-version=0";
+// Analytics data URL removed - not applicable for neony networks
 
 export type AnalyticsData = {
   daily_active_users: DailyActiveUserData[];
@@ -83,24 +80,7 @@ export type NodeCountData = {
 };
 
 export function useGetAnalyticsData() {
-  const [state] = useGlobalState();
-  const [data, setData] = useState<AnalyticsData>();
-
-  useEffect(() => {
-    if (state.network_name === defaultNetworkName) {
-      const fetchData = async () => {
-        const response = await fetch(ANALYTICS_DATA_URL);
-        const data = await response.json();
-        setData(data);
-      };
-
-      fetchData().catch((error) => {
-        console.error("ERROR!", error, typeof error);
-      });
-    } else {
-      setData(undefined);
-    }
-  }, [state]);
-
+  // External analytics data not available for neony networks
+  const [data] = useState<AnalyticsData>();
   return data;
 }

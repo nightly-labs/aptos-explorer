@@ -185,7 +185,7 @@ export default function TransactionTabs({
           value={
             <Link
               color="inherit"
-              to={`https://fullnode.${globalState.network_name.toLowerCase()}.aptoslabs.com/v1/transactions/by_hash/${transaction.hash}`}
+              to={`${globalState.network_value}/transactions/by_hash/${transaction.hash}`}
             >
               Transaction ${transaction.hash}
             </Link>

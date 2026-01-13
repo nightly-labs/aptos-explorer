@@ -3,20 +3,12 @@ import {CoinDescription} from "./api/hooks/useGetCoinList";
 /**
  * Network
  */
-export const devnetUrl =
-  import.meta.env.APTOS_DEVNET_URL ||
-  "https://api.devnet.staging.aptoslabs.com/v1";
-
 export const networks: Record<string, string> = {
-  mainnet: "https://api.mainnet.aptoslabs.com/v1",
-  testnet: "https://api.testnet.staging.aptoslabs.com/v1",
-  devnet: devnetUrl,
-  decibel: "https://api.netna.staging.aptoslabs.com/v1",
-  neony: "https://network.neony.exchange:18080/v1",
-  local: "http://127.0.0.1:8080/v1",
+  mainnet: "https://rpc.mainnet.neony.exchange/v1",
+  "neony testnet": "https://network.neony.exchange:18080/v1",
 };
 
-export const hiddenNetworks = ["decibel"];
+export const hiddenNetworks: string[] = [];
 
 export type NetworkName = keyof typeof networks;
 
@@ -36,12 +28,8 @@ type ApiKeys = {
  * value to `undefined`.
  */
 const apiKeys: ApiKeys = {
-  mainnet: "AG-4SNLEBS1PFZ3PCMUCA3T3MW5WWF5JWLJX",
-  testnet: "AG-6ZFXBNIVINVKOKLNAHNTFPDHY8WMBBD3X",
-  devnet: "AG-GA6I9F6H8NM1ACW8ZVJGMPUTJUKZ5KN6A",
-  decibel: undefined,
-  neony: undefined,
-  local: undefined,
+  mainnet: undefined,
+  "neony testnet": undefined,
 };
 
 export function getApiKey(network_name: NetworkName): string | undefined {
@@ -54,10 +42,7 @@ export function isValidNetworkName(value: string): value is NetworkName {
 
 export enum Network {
   MAINNET = "mainnet",
-  TESTNET = "testnet",
-  DEVNET = "devnet",
-  DECIBEL = "decibel",
-  NEONY = "neony",
+  NEONY_TESTNET = "neony testnet",
 }
 
 // Remove trailing slashes

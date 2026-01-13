@@ -1,7 +1,4 @@
-import {useGlobalState} from "../../global-config/GlobalConfig";
-
-// TODO: replace existing mainnet checks across the code base with this hook
+// No mainnet in this explorer - always returns false
 export function useGetInMainnet(): boolean {
-  const [state] = useGlobalState();
-  return state.network_name === "mainnet";
+  return false;
 }

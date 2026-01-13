@@ -7,7 +7,7 @@ import {useParams} from "react-router-dom";
 import {ValidatorsTable} from "../ValidatorsTable";
 import {DelegationValidatorsTable} from "../DelegationValidatorsTable";
 import {EnhancedDelegationValidatorsTable} from "./EnhancedDelegationValidatorsTable";
-import {Network, NetworkName} from "../../../constants";
+import {NetworkName} from "../../../constants";
 import {ValidatorsTable as OldValidatorsTable} from "../Table";
 import {useGlobalState} from "../../../global-config/GlobalConfig";
 import {useWallet} from "@aptos-labs/wallet-adapter-react";
@@ -44,23 +44,9 @@ type TabPanelProps = {
   networkName: NetworkName;
 };
 
-function TabPanel({value, networkName}: TabPanelProps): React.JSX.Element {
-  switch (networkName) {
-    case Network.MAINNET:
-    case Network.TESTNET:
-      if (value === VALIDATORS_TAB_VALUE.ALL_NODES) {
-        return <ValidatorsTable />;
-      } else if (value === VALIDATORS_TAB_VALUE.DELEGATION_NODES) {
-        return <DelegationValidatorsTable />;
-      } else if (value === VALIDATORS_TAB_VALUE.ENHANCED_DELEGATION_NODES) {
-        return <EnhancedDelegationValidatorsTable />;
-      }
-      return <></>;
-    case Network.DEVNET:
-      return <OldValidatorsTable />;
-    default:
-      return <></>;
-  }
+function TabPanel({value}: TabPanelProps): React.JSX.Element {
+  // For neony testnet, show the old validators table
+  return <OldValidatorsTable />;
 }
 
 export default function EnhancedValidatorsPageTabs(): React.JSX.Element {

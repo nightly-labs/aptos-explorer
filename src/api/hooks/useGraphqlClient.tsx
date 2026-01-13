@@ -18,17 +18,9 @@ function getIsGraphqlClientSupportedFor(networkName: NetworkName): boolean {
 export function getGraphqlURI(networkName: NetworkName): string | undefined {
   switch (networkName) {
     case "mainnet":
-      return "https://api.mainnet.aptoslabs.com/v1/graphql";
-    case "testnet":
-      return "https://api.testnet.staging.aptoslabs.com/v1/graphql";
-    case "devnet":
-      return "https://api.devnet.staging.aptoslabs.com/v1/graphql";
-    case "decibel":
-      return "https://api.netna.staging.aptoslabs.com/v1/graphql";
-    case "neony":
+      return "https://rpc.mainnet.neony.exchange/v1/graphql";
+    case "neony testnet":
       return "https://network.neony.exchange:18090/v1/graphql";
-    case "local":
-      return "http://127.0.0.1:8090/v1/graphql";
     default:
       return undefined;
   }
