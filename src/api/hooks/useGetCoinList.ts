@@ -4,7 +4,7 @@ import {tryStandardizeAddress} from "../../utils";
 import {HardCodedCoins} from "../../constants";
 
 export type CoinDescription = {
-  chainId: number; // Chain id (1 if mainnet) TODO: Handle across all of explorer to filter based on testnet / mainnet
+  chainId: number; // Chain id (23 if mainnet) TODO: Handle across all of explorer to filter based on testnet / mainnet
   tokenAddress: string | null; // This is a coin address (if it exists)
   faAddress: string | null; // This is the FA address (if it exists)
   name: string; // Full name of the coin

@@ -414,7 +414,7 @@ export const scamAddresses: Record<string, string> = {
 // have functionality used elsewhere
 export const HardCodedCoins: Record<string, CoinDescription> = {
   "0x1::aptos_coin::AptosCoin": {
-    chainId: 1,
+    chainId: 23,
     tokenAddress: "0x1::aptos_coin::AptosCoin",
     faAddress: "0xa",
     name: "Aptos Coin",
@@ -437,7 +437,7 @@ export const HardCodedCoins: Record<string, CoinDescription> = {
     native: true,
   },
   "0xd39fcd33aedfd436a1bbb576a48d5c7c0ac317c9a9bb7d53ae9ffb41e8cb9fd9": {
-    chainId: 1,
+    chainId: 23,
     tokenAddress: null,
     faAddress:
       "0xd39fcd33aedfd436a1bbb576a48d5c7c0ac317c9a9bb7d53ae9ffb41e8cb9fd9",
@@ -460,7 +460,7 @@ export const HardCodedCoins: Record<string, CoinDescription> = {
     panoraTags: [],
   },
   "0x357b0b74bc833e95a115ad22604854d6b0fca151cecd94111770e5d6ffc9dc2b": {
-    chainId: 1,
+    chainId: 23,
     tokenAddress: null,
     faAddress:
       "0x357b0b74bc833e95a115ad22604854d6b0fca151cecd94111770e5d6ffc9dc2b",
@@ -484,7 +484,7 @@ export const HardCodedCoins: Record<string, CoinDescription> = {
     panoraTags: ["Native"],
   },
   "0xbae207659db88bea0cbead6da0ed00aac12edcdda169e591cd41c94180b46f3b": {
-    chainId: 1,
+    chainId: 23,
     tokenAddress: null,
     faAddress:
       "0xbae207659db88bea0cbead6da0ed00aac12edcdda169e591cd41c94180b46f3b",
@@ -508,7 +508,7 @@ export const HardCodedCoins: Record<string, CoinDescription> = {
     panoraTags: ["Native"],
   },
   "0xf37a8864fe737eb8ec2c2931047047cbaed1beed3fb0e5b7c5526dafd3b9c2e9": {
-    chainId: 1,
+    chainId: 23,
     tokenAddress: null,
     faAddress:
       "0xf37a8864fe737eb8ec2c2931047047cbaed1beed3fb0e5b7c5526dafd3b9c2e9",
@@ -532,7 +532,7 @@ export const HardCodedCoins: Record<string, CoinDescription> = {
     panoraTags: ["Native"],
   },
   "0xb30a694a344edee467d9f82330bbe7c3b89f440a1ecd2da1f3bca266560fce69": {
-    chainId: 1,
+    chainId: 23,
     tokenAddress: null,
     faAddress:
       "0xb30a694a344edee467d9f82330bbe7c3b89f440a1ecd2da1f3bca266560fce69",
@@ -556,7 +556,7 @@ export const HardCodedCoins: Record<string, CoinDescription> = {
     panoraTags: ["Native"],
   },
   "0x50038be55be5b964cfa32cf128b5cf05f123959f286b4cc02b86cafd48945f89": {
-    chainId: 1,
+    chainId: 23,
     tokenAddress: null,
     faAddress:
       "0x50038be55be5b964cfa32cf128b5cf05f123959f286b4cc02b86cafd48945f89",
@@ -580,7 +580,7 @@ export const HardCodedCoins: Record<string, CoinDescription> = {
     panoraTags: ["Native"],
   },
   "0xe528f4df568eb9fff6398adc514bc9585fab397f478972bcbebf1e75dee40a88": {
-    chainId: 1,
+    chainId: 23,
     tokenAddress: null,
     faAddress:
       "0xe528f4df568eb9fff6398adc514bc9585fab397f478972bcbebf1e75dee40a88",
@@ -605,7 +605,7 @@ export const HardCodedCoins: Record<string, CoinDescription> = {
     panoraTags: ["Native"],
   },
   "0x98e39700e0bc5420d0a5c461a5420f1a17358041761f64147b173dfb9e21052d": {
-    chainId: 1,
+    chainId: 23,
     tokenAddress: null,
     faAddress:
       "0x98e39700e0bc5420d0a5c461a5420f1a17358041761f64147b173dfb9e21052d",
@@ -629,7 +629,7 @@ export const HardCodedCoins: Record<string, CoinDescription> = {
     panoraTags: ["Native"],
   },
   "0xef0d49f03e48dbd055c3a369f74a304c366bda148005ddf6bb881ced79da0b09": {
-    chainId: 1,
+    chainId: 23,
     tokenAddress: null,
     faAddress:
       "0xef0d49f03e48dbd055c3a369f74a304c366bda148005ddf6bb881ced79da0b09",
@@ -653,7 +653,7 @@ export const HardCodedCoins: Record<string, CoinDescription> = {
     panoraTags: ["Native"],
   },
   "0xd0ab8c2f76cd640455db56ca758a9766a966c88f77920347aac1719edab1df5e": {
-    chainId: 1,
+    chainId: 23,
     tokenAddress: null,
     faAddress:
       "0xd0ab8c2f76cd640455db56ca758a9766a966c88f77920347aac1719edab1df5e",
@@ -676,7 +676,7 @@ export const HardCodedCoins: Record<string, CoinDescription> = {
     panoraTags: ["Native"],
   },
   "0xe9c2f12eba13a46b27f42b4028bed6f702e7e12271dbebd08f310df52d064e81": {
-    chainId: 1,
+    chainId: 23,
     tokenAddress: null,
     faAddress:
       "0xe9c2f12eba13a46b27f42b4028bed6f702e7e12271dbebd08f310df52d064e81",
@@ -701,7 +701,7 @@ export const HardCodedCoins: Record<string, CoinDescription> = {
     panoraTags: ["Native"],
   },
   "0x2597fe74a0dba786453d550fb348801183b69e734cdbd15f9c5537b566483cb7": {
-    chainId: 1,
+    chainId: 23,
     tokenAddress: null,
     faAddress:
       "0x2597fe74a0dba786453d550fb348801183b69e734cdbd15f9c5537b566483cb7",
@@ -726,7 +726,7 @@ export const HardCodedCoins: Record<string, CoinDescription> = {
     panoraTags: ["Native"],
   },
   "0xc546cc2dd26d9e9a4516b4514288bedf1085259fcb106b84b6469337f527fb92": {
-    chainId: 1,
+    chainId: 23,
     tokenAddress: null,
     faAddress:
       "0xc546cc2dd26d9e9a4516b4514288bedf1085259fcb106b84b6469337f527fb92",
@@ -750,7 +750,7 @@ export const HardCodedCoins: Record<string, CoinDescription> = {
     panoraTags: ["Native"],
   },
   "0xed18be0ea061c29dbbd2d22e9eb6bc61fde0babd1579c169bdd1d4f74730c419": {
-    chainId: 1,
+    chainId: 23,
     tokenAddress: null,
     faAddress:
       "0xed18be0ea061c29dbbd2d22e9eb6bc61fde0babd1579c169bdd1d4f74730c419",
@@ -773,7 +773,7 @@ export const HardCodedCoins: Record<string, CoinDescription> = {
     panoraTags: ["Native"],
   },
   "0xc9a5d270bb8bb47e7bb34377ceb529db2878e4a7b521b5b8a984b35f8feaa8e2": {
-    chainId: 1,
+    chainId: 23,
     tokenAddress: null,
     faAddress:
       "0xc9a5d270bb8bb47e7bb34377ceb529db2878e4a7b521b5b8a984b35f8feaa8e2",
@@ -797,7 +797,7 @@ export const HardCodedCoins: Record<string, CoinDescription> = {
     panoraTags: ["Native"],
   },
   "0xb2c7780f0a255a6137e5b39733f5a4c85fe093c549de5c359c1232deef57d1b7": {
-    chainId: 1,
+    chainId: 23,
     tokenAddress: null,
     faAddress:
       "0xb2c7780f0a255a6137e5b39733f5a4c85fe093c549de5c359c1232deef57d1b7",
@@ -820,7 +820,7 @@ export const HardCodedCoins: Record<string, CoinDescription> = {
     panoraTags: ["Native"],
   },
   "0x435ad41e7b383cef98899c4e5a22c8dc88ab67b22f95e5663d6c6649298c3a9d": {
-    chainId: 1,
+    chainId: 23,
     tokenAddress: null,
     faAddress:
       "0x435ad41e7b383cef98899c4e5a22c8dc88ab67b22f95e5663d6c6649298c3a9d",
