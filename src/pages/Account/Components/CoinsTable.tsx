@@ -262,7 +262,7 @@ export function CoinsTable({
 
   useEffect(() => {
     if (state.network_name === Network.MAINNET) {
-      setVerificationFilter(CoinVerificationFilterType.VERIFIED);
+      // setVerificationFilter(CoinVerificationFilterType.VERIFIED);
     }
   }, [state, state.network_value]);
 
